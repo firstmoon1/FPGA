@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Nov 08 21:41:03 2022
+# Process ID: 9924
+# Current directory: C:/Users/ilkay/Desktop/fpga/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5816 C:\Users\ilkay\Desktop\fpga\project_4\project_4.xpr
+# Log file: C:/Users/ilkay/Desktop/fpga/project_4/vivado.log
+# Journal file: C:/Users/ilkay/Desktop/fpga/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ilkay/Desktop/fpga/project_4/project_4.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/Users/ilkay/Desktop/fpga/project_4/project_4.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 757.906 ; gain = 122.020
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: -1 (See C:/Users/ilkay/Desktop/fpga/project_4/vivado_pid9924.debug)
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 08 21:43:13 2022...

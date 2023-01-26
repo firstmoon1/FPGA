@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Nov 11 23:56:13 2022
+# Process ID: 9468
+# Current directory: C:/Users/ilkay/Desktop/fpga/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7788 C:\Users\ilkay\Desktop\fpga\project_4\project_4.xpr
+# Log file: C:/Users/ilkay/Desktop/fpga/project_4/vivado.log
+# Journal file: C:/Users/ilkay/Desktop/fpga/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ilkay/Desktop/fpga/project_4/project_4.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/Users/ilkay/Desktop/fpga/project_4/project_4.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 721.918 ; gain = 130.922
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: final
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:50 ; elapsed = 00:28:19 . Memory (MB): peak = 760.285 ; gain = 550.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'final' [C:/Users/ilkay/Desktop/fpga/project_4/project_4.srcs/sources_1/new/final.v:3]
+INFO: [Synth 8-638] synthesizing module 'mux1' [C:/Users/ilkay/Desktop/fpga/project_4/project_4.srcs/sources_1/new/mux1.v:3]
+INFO: [Synth 8-256] done synthesizing module 'mux1' (1#1) [C:/Users/ilkay/Desktop/fpga/project_4/project_4.srcs/sources_1/new/mux1.v:3]
+INFO: [Synth 8-256] done synthesizing module 'final' (2#1) [C:/Users/ilkay/Desktop/fpga/project_4/project_4.srcs/sources_1/new/final.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:51 ; elapsed = 00:28:21 . Memory (MB): peak = 787.504 ; gain = 577.664
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:51 ; elapsed = 00:28:22 . Memory (MB): peak = 787.504 ; gain = 577.664
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:02:18 ; elapsed = 00:28:48 . Memory (MB): peak = 1061.828 ; gain = 851.988
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1061.828 ; gain = 321.617
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 12 00:27:24 2022...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Dec 22 01:11:56 2022
+# Process ID: 2280
+# Current directory: C:/Users/ilkay/Desktop/fpga/deneme/deneme.runs/impl_1
+# Command line: vivado.exe -log sys1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sys1.tcl -notrace
+# Log file: C:/Users/ilkay/Desktop/fpga/deneme/deneme.runs/impl_1/sys1.vdi
+# Journal file: C:/Users/ilkay/Desktop/fpga/deneme/deneme.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source sys1.tcl -notrace

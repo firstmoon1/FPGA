@@ -1,0 +1,401 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Oct 25 20:36:05 2022
+# Process ID: 1680
+# Current directory: C:/Users/ilkay/Desktop/fpga/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1044 C:\Users\ilkay\Desktop\fpga\project_3\project_3.xpr
+# Log file: C:/Users/ilkay/Desktop/fpga/project_3/vivado.log
+# Journal file: C:/Users/ilkay/Desktop/fpga/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ilkay/Desktop/fpga/project_3/project_3.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/Users/ilkay/Desktop/fpga/project_3/project_3.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 741.625 ; gain = 103.977
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: source1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:59 ; elapsed = 00:00:45 . Memory (MB): peak = 773.754 ; gain = 564.195
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'source1' [C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sources_1/new/source1.v:3]
+	Parameter coef bound to: 6'b110010 
+INFO: [Synth 8-256] done synthesizing module 'source1' (1#1) [C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sources_1/new/source1.v:3]
+WARNING: [Synth 8-3331] design source1 has unconnected port num1[5]
+WARNING: [Synth 8-3331] design source1 has unconnected port num1[4]
+WARNING: [Synth 8-3331] design source1 has unconnected port num1[3]
+WARNING: [Synth 8-3331] design source1 has unconnected port num2[7]
+WARNING: [Synth 8-3331] design source1 has unconnected port num2[6]
+WARNING: [Synth 8-3331] design source1 has unconnected port num2[5]
+WARNING: [Synth 8-3331] design source1 has unconnected port num2[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:00 ; elapsed = 00:00:46 . Memory (MB): peak = 800.020 ; gain = 590.461
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:00 ; elapsed = 00:00:46 . Memory (MB): peak = 800.020 ; gain = 590.461
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:24 ; elapsed = 00:01:02 . Memory (MB): peak = 1103.707 ; gain = 894.148
+6 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:24 . Memory (MB): peak = 1103.707 ; gain = 361.324
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav'
+"xvlog -m64 --relax -prj test1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sources_1/new/source1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module source1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sim_1/new/test1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 9015c67817844be3883c87c73458b74e --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.source1
+Compiling module xil_defaultlib.test1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test1_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav/xsim.dir/test1_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 25 20:38:02 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1108.504 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test1_behav -key {Behavioral:sim_1:Functional:test1} -tclbatch {test1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source test1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 1108.504 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:48 ; elapsed = 00:05:52 . Memory (MB): peak = 1148.156 ; gain = 938.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'source1' [C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sources_1/new/source1.v:3]
+	Parameter coef bound to: 6'b110010 
+INFO: [Synth 8-256] done synthesizing module 'source1' (1#1) [C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sources_1/new/source1.v:3]
+WARNING: [Synth 8-3331] design source1 has unconnected port num1[5]
+WARNING: [Synth 8-3331] design source1 has unconnected port num1[4]
+WARNING: [Synth 8-3331] design source1 has unconnected port num1[3]
+WARNING: [Synth 8-3331] design source1 has unconnected port num2[7]
+WARNING: [Synth 8-3331] design source1 has unconnected port num2[6]
+WARNING: [Synth 8-3331] design source1 has unconnected port num2[5]
+WARNING: [Synth 8-3331] design source1 has unconnected port num2[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:50 ; elapsed = 00:05:54 . Memory (MB): peak = 1154.578 ; gain = 945.020
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:50 ; elapsed = 00:05:54 . Memory (MB): peak = 1154.578 ; gain = 945.020
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1159.355 ; gain = 22.438
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:12 ; elapsed = 00:06:27 . Memory (MB): peak = 1159.355 ; gain = 949.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'source1' [C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sources_1/new/source1.v:3]
+	Parameter coef bound to: 6'b110010 
+INFO: [Synth 8-256] done synthesizing module 'source1' (1#1) [C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sources_1/new/source1.v:3]
+WARNING: [Synth 8-3331] design source1 has unconnected port num1[5]
+WARNING: [Synth 8-3331] design source1 has unconnected port num1[4]
+WARNING: [Synth 8-3331] design source1 has unconnected port num1[3]
+WARNING: [Synth 8-3331] design source1 has unconnected port num2[7]
+WARNING: [Synth 8-3331] design source1 has unconnected port num2[6]
+WARNING: [Synth 8-3331] design source1 has unconnected port num2[5]
+WARNING: [Synth 8-3331] design source1 has unconnected port num2[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:14 ; elapsed = 00:06:28 . Memory (MB): peak = 1159.355 ; gain = 949.797
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:14 ; elapsed = 00:06:28 . Memory (MB): peak = 1159.355 ; gain = 949.797
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1159.355 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav'
+"xvlog -m64 --relax -prj test1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sources_1/new/source1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module source1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sim_1/new/test1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sim_1/new/test1.v:17]
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sim_1/new/test1.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 9015c67817844be3883c87c73458b74e --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.source1
+Compiling module xil_defaultlib.test1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test1_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav/xsim.dir/test1_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 25 21:01:42 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test1_behav -key {Behavioral:sim_1:Functional:test1} -tclbatch {test1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source test1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1159.355 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ilkay/Desktop/fpga/project_3/project_3.runs/synth_1
+
+launch_runs impl_1
+[Tue Oct 25 21:01:53 2022] Launched synth_1...
+Run output will be captured here: C:/Users/ilkay/Desktop/fpga/project_3/project_3.runs/synth_1/runme.log
+[Tue Oct 25 21:01:53 2022] Launched impl_1...
+Run output will be captured here: C:/Users/ilkay/Desktop/fpga/project_3/project_3.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav'
+"xvlog -m64 --relax -prj test1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sources_1/new/source1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module source1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sim_1/new/test1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sim_1/new/test1.v:17]
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sim_1/new/test1.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 9015c67817844be3883c87c73458b74e --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.source1
+Compiling module xil_defaultlib.test1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test1_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav/xsim.dir/test1_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 25 21:04:46 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test1_behav -key {Behavioral:sim_1:Functional:test1} -tclbatch {test1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source test1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1159.355 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav'
+"xvlog -m64 --relax -prj test1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sources_1/new/source1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module source1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ilkay/Desktop/fpga/project_3/project_3.srcs/sim_1/new/test1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 9015c67817844be3883c87c73458b74e --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.source1
+Compiling module xil_defaultlib.test1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test1_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav/xsim.dir/test1_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 25 21:07:04 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ilkay/Desktop/fpga/project_3/project_3.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test1_behav -key {Behavioral:sim_1:Functional:test1} -tclbatch {test1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source test1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1159.355 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1161.664 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 25 21:14:14 2022...

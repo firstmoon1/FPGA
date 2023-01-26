@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Oct 16 15:33:26 2022
+# Process ID: 8388
+# Current directory: C:/Users/ilkay/Desktop/fpga/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2412 C:\Users\ilkay\Desktop\fpga\project_1\project_1.xpr
+# Log file: C:/Users/ilkay/Desktop/fpga/project_1/vivado.log
+# Journal file: C:/Users/ilkay/Desktop/fpga/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ilkay/Desktop/fpga/project_1/project_1.xpr
+open_run impl_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
